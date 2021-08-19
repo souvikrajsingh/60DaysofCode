@@ -2,8 +2,10 @@ package com.souvik.Day6;
 
 import java.util.Scanner;
 
-public class Duplicate {
-    public static void main(String[] args) {
+public class Duplicate
+{
+    public static void main(String[] args)
+    {
          Scanner sc=new Scanner(System.in);
         System.out.println("Enter the size of the array: ");
         int size = sc.nextInt();
@@ -17,7 +19,7 @@ public class Duplicate {
         System.out.println("Duplicate Elements: ");
         for(i=0;i<size;i++)
         {
-            for(j=0;j<size;j++)
+            for(j=i+1;j<size;j++)
             {
                 if(arr[i]==arr[j])
                 {
