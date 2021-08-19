@@ -15,7 +15,7 @@ public class MissingNumbers {
         {
             arr[i] = sc.nextInt();
         }
-        
+
     }
 }
 
