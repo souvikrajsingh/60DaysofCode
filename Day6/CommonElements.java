@@ -4,10 +4,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class CommonElements {
+public class CommonElements
+{
     static Scanner sc = new Scanner(System.in);
-
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
 
         System.out.println("Enter the size of the array 1: ");
         int s1 = sc.nextInt();
