@@ -25,13 +25,15 @@ public class Merge_usingThird {
     static void merging(int[]arr1,int[] arr2, int size1, int size2)
     {
         int[] arr3=new int[size1+ size2];
-        for (int i = 0; i < size1; i++) {
+        int k=0;
+        for (int i = 0; i < size1 + size2; i++) {
             if(i<size1) {
                 arr3[i] = arr1[i];
             }
             else
             {
-                arr3[i]=arr2[i-size2];
+                arr3[i]=arr2[k];
+                k=k+1;
             }
         }
         System.out.println(Arrays.toString(arr3));
