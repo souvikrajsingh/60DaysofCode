@@ -2,7 +2,7 @@ package com.souvik.Day14;
 
 import java.util.Scanner;
 
-public class InsetionElement {
+public class InsertionElement {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         int[] arr =new int[50];
