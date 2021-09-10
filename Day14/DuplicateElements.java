@@ -60,16 +60,19 @@ public class DuplicateElements {
     }
 
     static void removeduplicate(int[] arr) {
-        ArrayList<Integer> list = new ArrayList<>(arr.length+1);
+        int[] a=new int[arr.length];
+        int c=0;
         for (int i = 0; i < arr.length-1; i++) {
             if (arr[i] == arr[i + 1]) {
-                list.add(arr[i]);
+                a[c]=arr[i];
+                c=c+1;
             }
             else
             {
-                list.add(arr[i] );
+                a[c]=arr[i];
+                c=c+1;
             }
-            System.out.println("Merged Sorted and Removed Duplicates: " + list);
+            System.out.println("Merged Sorted and Removed Duplicates: " + Arrays.toString(a));
         }
     }
 }
