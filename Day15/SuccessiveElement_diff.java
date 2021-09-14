@@ -25,6 +25,7 @@ public class SuccessiveElement_diff {
 
     static void insertionsort(int[] arr)
     {
+
         for(int i=0;i<arr.length-1;i++)
         {
             for(int j=i+1; j > 0 ; j--)
@@ -37,8 +38,10 @@ public class SuccessiveElement_diff {
                 {
                     break;
                 }
+
             }
         }
+
     }
 
 
