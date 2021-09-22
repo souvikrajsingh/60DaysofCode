@@ -14,7 +14,7 @@ public class Binary_Check {
         }
         System.out.println("Enter the search element : ");
         int search= sc.nextInt();
-        int pos=binarsearch(arr,search);
+        int pos=binarysearch(arr,search);
         if(pos==-1)
         {
             System.out.println("Element not found . ");
@@ -25,9 +25,10 @@ public class Binary_Check {
         }
     }
 
-    private static int  binarsearch(int[] arr, int search) {
+    private static int  binarysearch(int[] arr, int search) {
 
-        int s=arr[0],e=arr[arr.length-1];
+        int s=0;
+        int e= arr.length-1;
         int pos=0;
 
         for (int i = 0; i < arr.length; i++) {
